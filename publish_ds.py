@@ -41,12 +41,20 @@ def load_dict_from_csv(csv_path):
     return result_list
 
 
+def ds_exists(doi, prefix='doi'):
+    resp = api.get_dataset(f'{prefix}:{doi}')
+    return True if resp.status_code == 200 else False
+
+
 def publish_dv(dv_ids, ds_ids):
     for i in dv_ids:
         api.publish_dataverse(i, True)
     for i in ds_ids:
         print(f'Publishing {i}')
-        api.publish_dataset(i, 'major', True)
+        if ds_exists(i, ''):
+            api.publish_dataset(i, 'major', True)
+        else:
+            print(f'{i} does not exist')
 
 
 def __main__(dv, action='all'):
