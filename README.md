@@ -7,8 +7,7 @@ This repo contains the scripts to import/update/publish EASY social science data
  2. ~~DONE: Yes - remove files fields from all json files~~
  3. ~~DONE: Yes - convert all additional files to json~~
  4. get all the additional metadata files and try
- 5. modified [pyDataverse](https://github.com/gdcc/pyDataverse) `api` object to skip `404` error when publishing
- 6. modified [pyDataverse](https://github.com/gdcc/pyDataverse) `api` object variable naming inconsistency bugs, i.e, `pid`, `identifier`. 
+ 5. modified [pyDataverse](https://github.com/gdcc/pyDataverse) `api` object variable naming inconsistency bugs, i.e, `pid`, `identifier`. 
 
 ## Steps to follow
 #### 0 prerequisite 
