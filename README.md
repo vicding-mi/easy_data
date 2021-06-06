@@ -48,7 +48,7 @@ easy_json_path = '/absolute/path/to/ds/json/folder'
     {
       "typeName": "title",
       "multiple": false,
-      "value": "Student en huwelijk 1964 v2",
+      "value": "title",
       "typeClass": "primitive"
     },
     {
@@ -60,112 +60,8 @@ easy_json_path = '/absolute/path/to/ds/json/folder'
           "dsDescriptionValue": {
             "typeName": "dsDescriptionValue",
             "multiple": false,
-            "value": "General living conditions / income problems / housing conditions / insurances / family life. Background variables: basic characteristics/ place of birth/ household characteristics/ occupation/employment/ income/capital assets/ education/ politics/ religion",
+            "value": "value text",
             "typeClass": "primitive"
-          }
-        }
-      ]
-    },
-    {
-      "typeName": "keyword",
-      "multiple": true,
-      "typeClass": "compound",
-      "value": [
-        {
-          "keywordValue": {
-            "typeName": "keywordValue",
-            "multiple": false,
-            "typeClass": "primitive",
-            "value": "sociology"
-          }
-        },
-        {
-          "keywordValue": {
-            "typeName": "keywordValue",
-            "multiple": false,
-            "typeClass": "primitive",
-            "value": "education"
-          }
-        },
-        {
-          "keywordValue": {
-            "typeName": "keywordValue",
-            "multiple": false,
-            "typeClass": "primitive",
-            "value": "housing"
-          }
-        },
-        {
-          "keywordValue": {
-            "typeName": "keywordValue",
-            "multiple": false,
-            "typeClass": "primitive",
-            "value": "living conditions"
-          }
-        },
-        {
-          "keywordValue": {
-            "typeName": "keywordValue",
-            "multiple": false,
-            "typeClass": "primitive",
-            "value": "family life"
-          }
-        },
-        {
-          "keywordValue": {
-            "typeName": "keywordValue",
-            "multiple": false,
-            "typeClass": "primitive",
-            "value": "finance"
-          }
-        }
-      ]
-    },
-    {
-      "typeName": "otherId",
-      "multiple": true,
-      "typeClass": "compound",
-      "value": [
-        {
-          "otherIdAgency": {
-            "typeName": "otherIdAgency",
-            "multiple": false,
-            "typeClass": "primitive",
-            "value": "AIP_ID"
-          },
-          "otherIdValue": {
-            "typeName": "otherIdValue",
-            "multiple": false,
-            "typeClass": "primitive",
-            "value": "twips.dans.knaw.nl--6272859301972094378-1172745308965"
-          }
-        },
-        {
-          "otherIdAgency": {
-            "typeName": "otherIdAgency",
-            "multiple": false,
-            "typeClass": "primitive",
-            "value": "PID"
-          },
-          "otherIdValue": {
-            "typeName": "otherIdValue",
-            "multiple": false,
-            "typeClass": "primitive",
-            "value": "urn:nbn:nl:ui:13-k7v-xhk"
-          }
-        },
-        {
-          "otherIdAgency": {
-            "typeName": "otherIdAgency",
-            "multiple": false,
-            "typeClass": "primitive",
-            "value": "DMO_ID"
-          },
-          "otherIdValue": {
-            "typeName": "otherIdValue",
-            "multiple": false,
-            "typeClass": "primitive",
-            "value": "easy-dataset:32697"
           }
         }
       ]
