@@ -19,3 +19,7 @@ __pycache__
 __pycache__/*
 
 dvconfig.py
+
+*.tsv
+
+additional-metadata-logfile.txt
