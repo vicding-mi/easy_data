@@ -6,7 +6,8 @@ import json
 fail_counter = 0
 total_counter = 0
 
-input_path = '/Users/vic/Documents/DANS/projects/ODISSEI/easy-data/easy-xml/additional_files'
+# input_path = '/Users/vic/Documents/DANS/projects/ODISSEI/easy-data/easy-xml/additional_files'
+input_path = '/Users/vic/Downloads/add-md'
 output_path = '/Users/vic/Documents/DANS/projects/ODISSEI/easy-data/easy-xml/additional_files_json'
 error_file = '/Users/vic/Documents/DANS/projects/ODISSEI/easy-data/easy-xml/additional_files_conversion_error'
 

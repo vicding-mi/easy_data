@@ -136,6 +136,8 @@ def __main__():
                 print(f'{f} has doi {current_doi}: Exists: Yes; Updating...')
                 full_input_filename = get_full_file_name(f)
                 resp = update_metadata(full_input_filename, current_doi)
+                # TODO: try replacing update_metadata with the following api call, if it works, should stick to pyDataverse
+                # resp = api.edit_dataset_metadata(current_doi, open(full_input_filename, mode='r').read())
                 if 300 > resp.status_code >= 200:
                     print(f'{base_url}/dataset.xhtml?persistentId=doi:{current_doi}&version=DRAFT')
                     print(f'{f} has doi {current_doi}: Exists: Yes; Updated')
