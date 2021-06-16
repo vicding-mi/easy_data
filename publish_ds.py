@@ -4,6 +4,7 @@ import sys
 from pyDataverse.api import Api
 import csv
 import dvconfig
+import requests
 
 base_url = dvconfig.base_url
 api_token = dvconfig.api_token
@@ -41,8 +42,12 @@ def load_dict_from_csv(csv_path):
     return result_list
 
 
-def ds_exists(doi, prefix='doi'):
-    resp = api.get_dataset(f'{prefix}:{doi}')
+def ds_exists(doi, prefix='doi', separator=':'):
+    doi_components = doi.split(separator)
+    if len(doi_components) > 1:
+        resp = api.get_dataset(f'{doi}')
+    else:
+        resp = api.get_dataset(f'{prefix}:{doi}')
     return True if resp.status_code == 200 else False
 
 
