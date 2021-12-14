@@ -2,12 +2,6 @@
 
 This repo contains the scripts to import/update/publish EASY social science datasets. The scripts are made to be small and atomic. The goal is to run them within flow management system, like Airflow for better presentation, automation and governance/provenance.  
 `Python 3.7` recommended. `lxml==4.6.3` and `pyDataverse==0.2.1` are the version dev against. 
-## TODO:
- 1. ~~DONE: Yes - check if we can add other metadata other than citation~~
- 2. ~~DONE: Yes - remove files fields from all json files~~
- 3. ~~DONE: Yes - convert all additional files to json~~
- 4. get all the additional metadata files and try
- 5. modified [pyDataverse](https://github.com/gdcc/pyDataverse) `api` object variable naming inconsistency bugs, i.e, `pid`, `identifier`. 
 
 ## Steps to follow
 #### 0 prerequisite 
